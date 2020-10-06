@@ -87,7 +87,7 @@ def count_words(text):
     word = ""
     for letter in text:
 
-        #Write to word if the character isn't writespace
+        #Write to word if the character isn't while or a special character
         if (letter != " " and letter.isalnum()):
             word = word + letter
 
@@ -103,7 +103,7 @@ def count_words(text):
     return wordCount
 
 
-#Wrote some rudimentary unit tests to see if the functions worked
+#Seeing if the functions work
 print(is_odd(5))
 print(is_palindrome("racecar"))
 print(count_words("How much wood would a woodchuck chuck"
